@@ -8,3 +8,8 @@
 
   <%= button_to "Destroy this room", @room, method: :delete %>
 </div>
+<div>
+  <%= render @room.messages %>
+</div>
+
+<%=link_to "New Message", new_room_message_path(@room)%> 
