@@ -1,4 +1,10 @@
-<p id="<%= dom_id(message) %>">
-  <%= message.created_at.strftime('%b %d, %Y %H:%M') %>: <%= message.content %>
+<p id="<%= dom_id(message) %>" class="bg-gray-100 rounded-lg p-2 mb-2">
+  <span class="text-gray-500 text-sm">
+    <%= message.created_at.strftime('%b %d, %Y %H:%M') %>
+  </span>
+  <span class="text-gray-800 ml-2">
+    <%= message.content %>
+  </span>
 </p>
+
 
