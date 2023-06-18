@@ -22,3 +22,13 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+### Start Project
+
+```bash
+$ rails new task_messenger -c tailwind -j esbuild -d postgresql -T --main
+$ cd task_messenger
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails s
+```
