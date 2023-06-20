@@ -1,5 +1,5 @@
 class Room < ApplicationRecord
-    has_many :messages, dependent: :destroy
+    has_many :messages
     broadcasts
     # has_many :users, through: :messages
     
