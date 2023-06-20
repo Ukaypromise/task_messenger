@@ -1,3 +1,4 @@
+<div class="max-w-screen-md items-center h-screen mx-auto my-6">
 <p class="text-green-500"><%= notice %></p>
 
 <%= turbo_stream_from @room%>
@@ -16,3 +17,4 @@
 
 <%# <%= link_to "New Message", new_room_message_path(@room), class: "text-green-500 hover:text-green-600 underline mt-4" %>
 <%= turbo_frame_tag "new_message", src:new_room_message_path(@room), target:"_top" %>
+</div>
