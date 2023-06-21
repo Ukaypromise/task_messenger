@@ -1,9 +1,10 @@
-<h1>New room</h1>
+<h1 class="text-4xl font-bold text-center my-8">New Room</h1>
 
-<%= render "form", room: @room %>
-
-<br>
-
-<div>
-  <%= link_to "Back to rooms", rooms_path %>
+<div class="max-w-md mx-auto">
+  <%= render "form", room: @room %>
 </div>
+
+<div class="flex justify-center mt-8">
+  <%= link_to "Back to Rooms", rooms_path, class: "px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600" %>
+</div>
+
