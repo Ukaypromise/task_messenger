@@ -1,18 +1,19 @@
 <div class=" items-center h-screen mx-auto my-6 max-w-screen-md">
-<div>
-<p style="color: green"><%= notice %></p>
+  <div>
+    <p class="text-green"><%= notice %></p>
 
-<h1>Rooms</h1>
+    <h1 class="text-2xl font-bold">Rooms</h1>
 
-<div id="rooms">
-  <% @rooms.each do |room| %>
-    <%= render room %>
-    <p>
-      <%= link_to "Show this room", room %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New room", new_room_path %>
-</div>
+    <div id="rooms" class="mt-4 mb-8">
+      <% @rooms.each do |room| %>
+        <%= render room %>
+        <p class="mt-4 mb-8">
+          <%= link_to "Show this room", room, class: "mt-4 mb-4 px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600" %>
+        </p>
+      <% end %>
+    </div>
+  <div class="mt-4">
+    <%= link_to "New room", new_room_path, class: "mt-14 px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600" %>
+  </div>
+  </div>
 </div>
