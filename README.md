@@ -1,27 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was used to test out the features of Hotwire.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 ### Start Project
 
 ```bash
@@ -30,5 +10,5 @@ $ cd task_messenger
 $ bundle install
 $ rails db:create
 $ rails db:migrate
-$ rails s
+$ ./bin/dev
 ```
